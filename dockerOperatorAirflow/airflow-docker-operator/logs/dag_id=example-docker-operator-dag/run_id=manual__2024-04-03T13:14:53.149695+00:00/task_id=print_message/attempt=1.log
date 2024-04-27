@@ -1,0 +1,14 @@
+[2024-04-03T13:14:53.607+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example-docker-operator-dag.print_message manual__2024-04-03T13:14:53.149695+00:00 [queued]>
+[2024-04-03T13:14:53.616+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example-docker-operator-dag.print_message manual__2024-04-03T13:14:53.149695+00:00 [queued]>
+[2024-04-03T13:14:53.617+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-04-03T13:14:53.631+0000] {taskinstance.py:2217} INFO - Executing <Task(DockerOperator): print_message> on 2024-04-03 13:14:53.149695+00:00
+[2024-04-03T13:14:53.637+0000] {standard_task_runner.py:60} INFO - Started process 90 to run task
+[2024-04-03T13:14:53.640+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'example-docker-operator-dag', 'print_message', 'manual__2024-04-03T13:14:53.149695+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/example_docker_operator_dag.py', '--cfg-path', '/tmp/tmpwv3ktdnm']
+[2024-04-03T13:14:53.641+0000] {standard_task_runner.py:88} INFO - Job 12: Subtask print_message
+[2024-04-03T13:14:53.686+0000] {task_command.py:423} INFO - Running <TaskInstance: example-docker-operator-dag.print_message manual__2024-04-03T13:14:53.149695+00:00 [running]> on host 9bb14f8f2a90
+[2024-04-03T13:14:53.763+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example-docker-operator-dag' AIRFLOW_CTX_TASK_ID='print_message' AIRFLOW_CTX_EXECUTION_DATE='2024-04-03T13:14:53.149695+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-03T13:14:53.149695+00:00'
+[2024-04-03T13:14:53.774+0000] {docker.py:359} INFO - Starting docker container from image docker-operator-etl:1.0
+[2024-04-03T13:14:53.998+0000] {docker.py:429} INFO - I'm 1 running inside a docker Container, but outside of *** schedule container
+[2024-04-03T13:14:54.216+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=example-docker-operator-dag, task_id=print_message, execution_date=20240403T131453, start_date=20240403T131453, end_date=20240403T131454
+[2024-04-03T13:14:54.255+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-03T13:14:54.269+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
